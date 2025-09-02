@@ -113,7 +113,7 @@ module FerrumPdf
           end
 
           # Wait for everything to load
-          page.network.wait_for_idle!(**wait_for_idle_options)
+          page.network.wait_for_idle(**wait_for_idle_options)
 
           yield browser, page
         end
